@@ -337,9 +337,7 @@ function getFizzBuzz(num) {
    */
   function isBracketsBalanced(str) {
     const bracketsConfig = [['(', ')'], ['[', ']'], ['{', '}'], ['<', '>']];
-    const pairToCloseBracket = Object.assign(...bracketsConfig.map(
-      el => ({ [el[1]]: el[0] }),
-    ));
+    const pairToCloseBracket = Object.assign(...bracketsConfig.map(el => ({ [el[1]]: el[0] })));
     return str.split('').reduce((singleBrackets, bracket) => {
       const len = singleBrackets.length;
       if (len > 0 && singleBrackets[len - 1] === pairToCloseBracket[bracket]) singleBrackets.pop();
