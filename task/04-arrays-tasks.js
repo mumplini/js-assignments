@@ -216,7 +216,7 @@ function findElement(arr, value) {
   *   [ 10, 100, -1 ]      => [ 100, 10000, 1 ]
   */
  function toArrayOfSquares(arr) {
-   return arr.map((el) => el ** 2);
+   return arr.map((el) => Math.pow(el, 2));
  }
  
  
@@ -592,7 +592,7 @@ function findElement(arr, value) {
    return arr.concat(half);
  }
 
- 
+
 module.exports = {
     findElement: findElement,
     generateOdds: generateOdds,
