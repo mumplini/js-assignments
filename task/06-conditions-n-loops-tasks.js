@@ -169,7 +169,7 @@ function getFizzBuzz(num) {
    *
    */
   function isInsideCircle(circle, point) {
-    return (circle.center.x - point.x) ** 2 + (circle.center.y - point.y) ** 2 < circle.radius ** 2;
+    return Math.pow((circle.center.x - point.x), 2) + Math.pow((circle.center.y - point.y), 2) < Math.pow(circle.radius, 2);
   }
   
   
