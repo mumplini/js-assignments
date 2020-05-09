@@ -121,7 +121,7 @@ function Rectangle(width, height) {
     continueBuild(item) {
       if (!this.cssItems) {
         const cssItems = [].concat(item);
-        const builder = { ...this };
+        const builder = Object.assign({}, this);;
         builder.cssItems = cssItems;
         return builder;
       }
