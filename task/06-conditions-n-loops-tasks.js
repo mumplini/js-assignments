@@ -450,7 +450,7 @@ function toNaryString(num, n) {
   function getMatrixProduct(m1, m2) {
     const result = new Array(m1.length).fill(0).map(() => new Array(m2[0].length).fill(0));
     return result.map((row, i) => row.map((val, j) => m1[i].reduce(
-      (sum, elm, k) => sum + (elm * m2[k][j]), 0,
+      (sum, elm, k) => sum + (elm * m2[k][j]), 0
     )));
   }
   
